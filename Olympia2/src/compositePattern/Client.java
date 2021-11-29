@@ -7,9 +7,12 @@ public class Client {
 		OlympicTeam olympia = new OlympicTeam("Olympia");
 		
 		OlympicTeam asia = new OlympicTeam("Asia");
+		OlympicTeam africa = new OlympicTeam("Africa");
 		OlympicTeam europe = new OlympicTeam("Europe");
+		OlympicTeam south_america = new OlympicTeam("South-America");
 
 		OlympicTeam china = new OlympicTeam("China");
+		OlympicTeam afghanistan = new OlympicTeam("Afghanistan");
 		OlympicTeam germany = new OlympicTeam("Germany");
 		OlympicTeam italy = new OlympicTeam("Italy");
 
@@ -39,6 +42,7 @@ public class Client {
 		
 		olympia.add(asia);
 		asia.add(china);
+		asia.add(afghanistan);
 		china.add(chinaWomen);
 		china.add(chinaMen);
 		
@@ -48,6 +52,8 @@ public class Client {
 		
 		chinaMen.add(chinaMenShooting);
 
+		olympia.add(africa);
+		
 		olympia.add(europe);
 		europe.add(germany);
 		europe.add(italy);
@@ -69,13 +75,14 @@ public class Client {
 		italyMen.add(italyMenFootball);
 		italyMen.add(italyMenSwimmingTeam);
 		
+		olympia.add(south_america);
 		
-		//Germany-Men Name and Atheltes	
-		chinaMen.getTeamName();
-		chinaMen.getNumberOfAtlethes();
+		//Germany-Men Name and Athletes	
+		germanyMen.getTeamName();
+		germanyMen.getNumberOfAtlethes();
 		System.out.println();	
 		
-		//Germany Name and Gold Medals	
+		//Germany Teams and Gold Medals	
 		germany.getTeamName();
 		germany.getNumberOfGoldMedals();
 		System.out.println();

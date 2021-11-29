@@ -14,16 +14,17 @@ public class IndividualTeam implements Team{
 
 	@Override
 	public void getTeamName() {
+		System.out.println(name);
 	}
 
 	@Override
 	public void getNumberOfGoldMedals() {
-		System.out.println("Team "+ this.name + ", Number of Gold Medals: "+ this.goldMedals);	
+		System.out.println("Team: "+ this.name + ", Number of Gold Medals: "+ this.goldMedals);	
 	}
 
 	@Override
 	public void getNumberOfAtlethes() {
-		System.out.println("Team "+ this.name + ", Number of Athletes: "+ this.athletes);
+		System.out.println("Team: "+ this.name + ", Number of Athletes: "+ this.athletes);
 	}
 
 }
